@@ -1,0 +1,701 @@
+/* GLOBAL */
+
+body,
+html {
+    background-color: #070707;
+    font-family: larken;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    overflow: hidden;
+    /* cursor: none; */
+}
+
+button:hover{
+    cursor: none;
+}
+
+::selection {
+    background-color: #DC1E3D;
+}
+
+button {
+    font-family: larken;
+}
+
+/* INTRO OVERLAY */
+
+#intro-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #070707;
+    position: fixed;
+    z-index: 50;
+    transition: opacity .25s ease-in-out;
+    /* display: none; */
+}
+
+#intro-overlay.fadeOut {
+    opacity: 0;
+}
+
+#intro-overlay.remove {
+    display: none;
+}
+
+
+#inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+}
+
+#strxngers-logo {
+    width: 400px;
+    height: 101px;
+    position: relative;
+}
+
+#entersite-btn {
+    padding: 15px;
+    font-size: 20px;
+    width: 250px;
+    color: white;
+    background-color: #DC1E3D;
+    border: 0px;
+    margin-top: 100px;
+}
+
+#entersite-btn:hover {
+    background-color: #981a2f;
+}
+
+#slogan {
+    margin: 0px;
+    position: relative;
+}
+
+.fadeInIntro {
+    animation: fadeIn 2s;
+}
+
+/* HEADER */
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #070707;
+    height: 55px;
+
+}
+
+#header-logo {
+    z-index: 21;
+    width: 200px;
+    height: 80px;
+}
+
+#content-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: calc(100vh - 80px);
+    /* background-image: url('/static/imgs/city.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+/* IMAGE PLACEHOLDER */
+
+#img-placehold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-shirt {
+    width: 250px;
+    position: absolute;
+    z-index: 5;
+
+}
+
+#img-splash {
+    width: 300px;
+    position: relative;
+
+}
+
+.remove-img {
+    animation: fadeOutSplash .5s forwards;
+}
+
+.add-img {
+    animation: fadeInImg .5s;
+
+}
+
+/* PRODUCT INFORMAION */
+
+#product-title {
+    margin: 0px 0px 0px 0px;
+    z-index: 15;
+}
+
+#desc-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+  
+}
+
+.move-title {
+    animation: moveTitle .6s forwards;
+    z-index: 15;
+
+}
+
+.move-title-down {
+    animation: moveTitleDown .6s forwards;
+
+}
+
+#price {
+    margin: 20px 0px 15px 0px;
+}
+
+/* DETAILS  */
+
+#details-wrap {
+    width: 300px;
+    position: absolute;
+
+}
+
+.details-wrap-class {
+    display: none;
+}
+
+#details-wrap.details-open {
+    display: block;
+    animation: moveDetails .6s forwards;
+    z-index: 15;
+}
+
+.details-close {
+    animation: fadeOut .6s forwards;
+
+}
+
+#sizes-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+#sizes-box {
+    background-color: white;
+    color: black;
+    height: 35px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.size-box {
+    background-color: white;
+    color: black;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PRODUCT BUTTONS */
+
+#button-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#buy-btn {
+    padding: 15px;
+    font-size: 20px;
+    width: 150px;
+    color: white;
+    background-color: #DC1E3D;
+    border: 0px;
+}
+
+#details-btn {
+    padding: 15px;
+    font-size: 20px;
+    width: 150px;
+    color: white;
+    background-color: #070707;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#details-btn>img {
+    pointer-events: none;
+}
+
+#buy-btn:hover {
+    background-color: #981a2f;
+}
+
+#details-btn:hover {
+    background-color: #2a2a2a;
+}
+
+/* ADD TO CART PAGE */
+
+#buypage-wrap {
+    background-color: #070707;
+    margin-top: 80px;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: none;
+}
+
+#buypage-wrap>h3 {
+    margin-bottom: 0px;
+}
+
+#shirt-buypage {
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -125px;
+    z-index: 2;
+    display: none;
+}
+
+#doublesplash {
+    opacity: 40%;
+    bottom: 0;
+    width: 450px;
+    margin-bottom: -100px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px
+}
+
+#form>button {
+    padding: 10px;
+    font-size: 20px;
+    width: 200px;
+    color: white;
+    background-color: #DC1E3D;
+    border: 0px;
+}
+
+#form>button:hover {
+    background-color: #981a2f;
+}
+#form>h3{
+    margin: 0px;
+}
+
+#sizebtn-wrap {
+    padding: 30px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option {
+    display: none;
+}
+
+.label {
+    content: '';
+    display: inline-block;
+    background-color: white;
+    color: black;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+    overflow-x: hidden;
+    cursor: pointer;
+
+}
+
+.label:hover {
+    background-color: #cacaca;
+    cursor: none;
+}
+
+#sizebtn-wrap>label>p {
+    display: flex;
+    margin: 0px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-size input[type='radio']:checked+label {
+    background-color: #DC1E3D;
+    color: white;
+}
+
+.fadeInBuy {
+    animation: fadeIn .5s;
+}
+
+.fadeOutBuy {
+    animation: fadeOut .5s;
+}
+
+#placeorder-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    width: 215px;
+
+}
+
+#exit-buybtn:hover {
+    color: #cacaca;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'larken';
+    src: local('rounded'), url('/static/css/fonts/larken.ttf') format("truetype");
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeOutSplash {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 25%;
+    }
+}
+
+@keyframes fadeInImg {
+    0% {
+        opacity: 25%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveTitle {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-160px);
+    }
+}
+
+@keyframes moveTitleDown {
+    0% {
+        transform: translateY(-160px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes moveDetails {
+    0% {
+        transform: translateY(100px);
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(-100px);
+        opacity: 100%;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    /* INTRO */
+    #strxngers-logo {
+        width: 600px;
+        height: 150px;
+    }
+
+    #slogan {
+        font-size: 25px;
+    }
+
+    /* PLACEHOLDER IMGS */
+
+    #img-shirt {
+        width: 400px;
+    }
+
+    #img-splash {
+        width: 450px;
+    }
+
+    /* DETAILS */
+
+    #details-wrap {
+        width: 400px;
+        font-size: 20px;
+    }
+
+    #sizes-wrap {
+        width: 400px;
+        padding-top: 20px;
+        justify-content: space-between;
+    }
+
+    .size-box {
+        padding: 10px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+    }
+
+    #sizebtn-wrap {
+        width: 350px;
+    }
+
+    #product-title {
+        font-size: 55px;
+    }
+
+    #desc-wrap {
+        width: 600px;
+    }
+
+    #button-wrap {
+        width: 350px;
+    }
+
+    /* BUY PAGE */
+
+    .label {
+        width: 75px;
+        height: 75px;
+    }
+
+    #sizebtn-wrap>label>p {
+        height: 75px;
+        font-size: 25px;
+    }
+
+    #buypage-wrap>h3 {
+        font-size: 25px;
+    }
+
+    #form>button {
+        padding: 15px;
+        font-size: 20px;
+        width: 250px;
+        color: white;
+        background-color: #DC1E3D;
+        border: 0px;
+        font-size: 25px;
+    }
+
+    #exit-buybtn {
+        font-size: 20px;
+    }
+
+    #shirt-buypage {
+
+        margin-bottom: -325px;
+    }
+
+    /* MEDIA QUEREY ANIM */
+
+    @keyframes moveTitle {
+        0% {
+            transform: translateY(0px);
+        }
+
+        100% {
+            transform: translateY(-200px);
+        }
+    }
+
+    @keyframes moveTitleDown {
+        0% {
+            transform: translateY(-200px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes moveDetails {
+        0% {
+            transform: translateY(100px);
+            opacity: 0%;
+        }
+    
+        25% {
+            opacity: 0%;
+        }
+    
+        100% {
+            transform: translateY(-110px);
+            opacity: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    /* BUY PAGE */
+
+    #form>button {
+        padding: 15px;
+        width: 200px;
+        color: white;
+        background-color: #DC1E3D;
+        border: 0px;
+        font-size: 20px;
+    }
+
+    #shirt-buypage {
+        width: 700px;
+        margin-bottom: -350px;
+    }
+
+    /* CURSOR */
+
+    .innercursor {
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        border-radius: 100px;
+        z-index: 999;
+        position: fixed;
+        display: none;
+        pointer-events: none;
+        transition: width 0.5s, height 0.5s;
+        transform: translate(-50%, -50%);
+        backdrop-filter: blur(3px);
+
+    }
+
+    .grow {
+        width: 40px;
+        height: 40px;
+        transform: width 0.5s, height 0.5;
+        mix-blend-mode: hue;
+    }
+
+    .outercursor.shrink {
+        width: 40px;
+        height: 40px;
+        transform: width 0.5s, height 0.5;
+    }
+
+    .outercursor {
+        content: '';
+        border: 4px solid white;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        pointer-events: none;
+        transition: width 0.5s, height 0.5s, top 0.03s, left 0.03s;
+        display: none;
+    }
+
+    .clickAnm {
+        animation: cursorClick .5s forwards;
+
+    }
+
+    /* MEDIA QUEREY ANIM */
+
+    @keyframes cursorClick {
+        0% {
+            width: 40px;
+            height: 40px
+        }
+
+        50% {
+            width: 25px;
+            height: 25px
+        }
+
+        100% {
+            width: 40px;
+            height: 40px
+        }
+    }
+
+}
