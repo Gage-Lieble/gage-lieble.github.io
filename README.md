@@ -1,2 +1,4 @@
 ## My personal portfolio
-[Portfolio](http://www.gagelieble.com/)
+> This website was developed with vanilla javascript
+
+[gagelieble.com >](http://www.gagelieble.com/)
