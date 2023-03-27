@@ -1,1 +1,4 @@
-[link](http://www.gage-lieble.github.io)
+## My personal portfolio
+> This website was developed with vanilla javascript
+
+[gagelieble.com >](http://www.gagelieble.com/)
