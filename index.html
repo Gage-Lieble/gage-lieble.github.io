@@ -110,7 +110,11 @@
     </div>
 
     <div id="about-wrapper">
-
+        <div id="loading-wrap" style="display: none;">
+            <img src="./static/portfolio/imgs/loader.gif" id="loader-icon">
+            <h3 id="loading-text">Loading project...</h3>
+            
+        </div>
         <h1 id="about-head">WHO AM I?</h1>
         <div id="sentences">
             <p>I am based in the City of Roses, Portland OR.</p>
@@ -120,7 +124,6 @@
             <p>In middle school I created my first website using HTML and CSS exclusively; which I taught myself by watching various Youtube tutorials and reading through tons of pages on StackOverflow.</p>
             <p>My programming abilities have definitely improved since then and I am glad to further my knowlege in tech!</p>
             <p style="text-align:center"><span style="color:rgb(144, 221, 144);">some</span> of my tech knowlege</p>
-
         </div>
     </div>
     <div id="languages">
@@ -138,7 +141,7 @@
                 <img class="work-img" src="./static/portfolio/imgs/strxngersscreen.JPG" alt="qrscreen">
                 <img class="work-logo" id="strxnger-logo" src="./static/portfolio/imgs/strxngers.svg" alt="qrlogo">
             </div>
-            <div class="work-links"><a style="background-color: #dc1e3d;" href="https://github.com/Gage-Lieble/Strxngers">Github ></a><a style="background-color: #dc1e3d;" href="/strxngers.html">Mockup ></a></div>
+            <div class="work-links"><a style="background-color: #dc1e3d;" href="https://github.com/Gage-Lieble/Strxngers">Github ></a><a style="background-color: #dc1e3d;" href="/strxngers.html" onclick="displayLoader('Strxngers')">Mockup ></a></div>
             <div id="work-languages">
                 <img src="./static/portfolio/imgs/javascript.svg" alt="javascript">
                 
@@ -149,7 +152,7 @@
                 <img class="work-img" src="./static/portfolio/imgs/qrscreen.JPG" alt="qrscreen">
                 <img class="work-logo" src="./static/portfolio/imgs/qrlogo.svg" alt="qrlogo">
             </div>
-            <div class="work-links"><a class="qr-links" href="https://github.com/Gage-Lieble/QrPixel">Github ></a><a class="qr-links" href="https://qrpixel-gage.herokuapp.com/">QrPixel ></a></div>
+            <div class="work-links"><a class="qr-links" href="https://github.com/Gage-Lieble/QrPixel">Github ></a><a class="qr-links" href="https://qrpixel-gage.herokuapp.com/" onclick="displayLoader('QrPixel')">QrPixel ></a></div>
             <div id="work-languages">
                 <img src="./static/portfolio/imgs/javascript.svg" alt="javascript">
                 <img src="./static/portfolio/imgs/django.svg" alt="django">
@@ -161,7 +164,7 @@
                 <img class="work-img" src="./static/portfolio/imgs/dreamstreamscreen.JPG" alt="dreamscreen">
                 <img id="dream-logo" class="work-logo" src="./static/portfolio/imgs/dreamstreamlogo.svg" alt="dreamlogo">
             </div>
-            <div class="work-links"><a class="dream-links" href="https://github.com/Gage-Lieble/DreamStream">Github ></a><a class="dream-links" href="https://dream-stream-gage.herokuapp.com/">DreamStream ></a></div>
+            <div class="work-links"><a class="dream-links" href="https://github.com/Gage-Lieble/DreamStream">Github ></a><a class="dream-links" href="https://dream-stream-gage.herokuapp.com/" onclick="displayLoader('Dreamstream')">DreamStream ></a></div>
             <div id="work-languages">
                 <img src="./static/portfolio/imgs/javascript.svg" alt="javascript">
                 <img src="./static/portfolio/imgs/django.svg" alt="django">
@@ -174,7 +177,7 @@
                 <img class="work-img" src="./static/portfolio/imgs/weatherscreen.JPG" alt="weatherscreen">
                 <img id="weather-logo" class="work-logo" src="./static/portfolio/imgs/weatherlogo.svg" alt="weatherlogo">
             </div>
-            <div class="work-links"><a class="weather-links" href="https://github.com/Gage-Lieble/APIweatherapp">Github ></a><a class="weather-links" href="https://simple-weather-gage.herokuapp.com/">Weather ></a></div>
+            <div class="work-links"><a class="weather-links" href="https://github.com/Gage-Lieble/APIweatherapp">Github ></a><a class="weather-links" href="https://simple-weather-gage.herokuapp.com/" onclick="displayLoader('Weather')">Weather ></a></div>
             <div id="work-languages">
                 <img src="./static/portfolio/imgs/django.svg" alt="">
                 <img src="./static/portfolio/imgs/python.svg" alt="">

@@ -116,7 +116,7 @@ window.addEventListener('scroll', changeNav)
 // MAIN WORD CHANGER
 let mainWord = document.getElementById('main-word')
 let start = 0
-let randomWords = ['SOFTWARE', 'DJANGO', 'WEBSITE', 'JAVASCRIPT', 'PYTHON', 'VUE.JS']
+let randomWords = ['SOFTWARE', 'DJANGO', 'WEBSITE', 'REACT','JAVASCRIPT', 'PYTHON', 'VUE.JS']
 
 function changeWord() {
     mainWord.innerText = randomWords[start]
@@ -130,3 +130,10 @@ function changeWord() {
 }
 
 changeWord()
+
+const displayLoader = (proj) => {
+    let loaderWrap = document.getElementById('loading-wrap')
+    let loaderText = document.getElementById('loading-text')
+    loaderWrap.style.display = 'flex'
+    loaderText.innerText = `Loading ${proj}...`
+}
