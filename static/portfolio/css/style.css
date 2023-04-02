@@ -24,6 +24,21 @@ h1 {
 }
 
 
+#name-wrap{
+    display: flex;
+    align-items: center;
+}
+
+#name-end{
+    color:rgb(144, 221, 144);
+    
+}
+#scramble{
+    font-family: 'MC';
+    color: rgb(239, 239, 239);
+
+}
+
 /* TOPO */
 
 #topo-left {
@@ -652,6 +667,10 @@ h1 {
     src: url('/static/portfolio/font/visby.ttf');
 }
 
+@font-face {
+    font-family: 'MC';
+    src: url('/static/portfolio/font/minecraft-enchantment.ttf');
+}
 
 /* MEDIA QURIES */
 

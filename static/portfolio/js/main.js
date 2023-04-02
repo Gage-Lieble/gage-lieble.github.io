@@ -1,3 +1,48 @@
+
+
+let halfOneNameFrames = `Hey, Im `
+let halfTwoNameFrames = `Gage Lieble!`
+let i = 0
+let i2 = 0
+
+const scrambleTxt = 'qwertyuiopasdfghjklzxcvbnm'
+const scrambleWrap = document.getElementById('scramble')
+const nameType = () => {
+    const typeLine = document.getElementById('type-line')
+
+
+    if (i < halfOneNameFrames.length){
+        const myName = document.getElementById('myname')
+        myName.innerHTML += halfOneNameFrames.charAt(i)
+        i++;
+        scrambleWrap.innerHTML = ` ${scrambleTxt[Math.floor(Math.random()*scrambleTxt.length)]}`
+        setTimeout(nameType, 100)
+    }
+    if(i === halfOneNameFrames.length && i <halfTwoNameFrames.length && i2 < halfTwoNameFrames.length){
+        const myName = document.getElementById('myname')
+        scrambleWrap.style.color = '#90DD90'
+        myName.innerHTML += `<span style='color:rgb(144, 221, 144)'>${halfTwoNameFrames.charAt(i2)}<span>`
+        i2++;
+        scrambleWrap.innerHTML = ` ${scrambleTxt[Math.floor(Math.random()*scrambleTxt.length)]}`
+        setTimeout(nameType, 100)
+        if(i2 === halfTwoNameFrames.length){
+            myName.innerHTML = `Hey, Im <span style='color:rgb(144, 221, 144)'>Gage Lieble!<span>`
+            document.getElementById('name-end').innerHTML = ''
+        }
+    }
+    }
+
+
+nameType()
+
+
+
+// let mainWord = document.getElementById('main-word')
+// let start = 0
+// let randomWords = ['SOFTWARE', 'DJANGO', 'WEBSITE', 'REACT','JAVASCRIPT', 'PYTHON', 'VUE.JS']
+
+
+
 // NAV
 let navToggle = document.querySelector('.toggle')
 let navOptions = document.getElementById('nav-option-wrap')
@@ -137,3 +182,4 @@ const displayLoader = (proj) => {
     loaderWrap.style.display = 'flex'
     loaderText.innerText = `Loading ${proj}...`
 }
+
