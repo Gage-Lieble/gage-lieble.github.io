@@ -24,39 +24,6 @@ h1 {
 }
 
 
-.edu-logo-wrap-r{
-    width: 25%;
-    background: rgb(144,221,144);
-    background: linear-gradient(-90deg, rgba(144,221,144,1) 0%, rgba(144,221,144,1) 17%, rgba(9,213,248,0) 94%, rgba(0,212,255,0) 100%);
-    padding-right: 75vw;
-    margin-right: -100vw;
-    max-width: 100px;
-    margin-top: 30px;
-    display: flex;
-}
-
-.edu-logo-wrap{
-    width: 25%;
-    max-width: 100px;
-    background: rgb(144,221,144);
-    background: linear-gradient(90deg, rgba(144,221,144,1) 0%, rgba(144,221,144,1) 17%, rgba(9,213,248,0) 94%, rgba(0,212,255,0) 100%);
-    padding-left: 75vw;
-    margin-left: -100vw;
-    margin-top: 30px;
-    display: flex;
-}
-
-.edu-logo-wrap-r>img,
-.edu-logo-wrap>img {
-    width: 100%;
-    filter: invert();
-    transform: scale(1.5) rotate(45deg);
-    border-radius: 50%;
-}
-.mid{
-    margin-left: -50vw;
-}
-
 #name-wrap{
     display: flex;
     align-items: center;
@@ -252,26 +219,6 @@ h1 {
         transform: translateY(0px);
     }
 }
-.outer-1{
-    animation: floatingLogo 3s ease-in-out infinite;
-}
-.mid{
-    animation: floatingLogo 5s ease-in-out infinite;
-}
-.outer-2{
-    animation: floatingLogo 4s ease-in-out infinite;
-}
-@keyframes floatingLogo {
-    0% {
-        transform: translateX(0px);
-    }
-    50% {
-        transform: translateX(10px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
 
 #developer {
     color: white;
@@ -433,7 +380,7 @@ h1 {
 /* EDUCATION */
 
 #education-wrapper {
-    height: 100%;
+    height: 1000px;
     padding-top: 75px;
 }
 
@@ -477,10 +424,6 @@ h1 {
     color: white;
 }
 
-.lrg{
-    font-size: 50px;
-    margin: 0px 0px 15px 0px;
-}
 #clock-outline {
     width: 350px;
     height: 350px;
@@ -557,25 +500,16 @@ h1 {
 .teachsub-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* background-color: pink; */
+    align-items: flex-end;
     margin-top: 75px;
 }
 
-.tech-wrap{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 500px;
-    margin-bottom: 50px;
+.align-start {
+    align-items: flex-start;
 }
-
 
 .frameworks {
     color: white;
-    border: 4px solid white;
-    margin: 2px;
-    padding: 10px;
 }
 
 #frameworklogo-wrap {
@@ -613,13 +547,13 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 950px;
 }
 
 #grad-title {
     color: white;
     text-align: center;
-    /* margin-top: 250px; */
+    margin-top: 250px;
 }
 
 #cert-img {
@@ -641,15 +575,13 @@ h1 {
 }
 
 #resume-link {
-    color: white;
-    text-decoration: none;
+    color: #f37024;
     margin: 60px 0px 0px 0px;
     padding: 15px;
 }
 
 #resume-link:hover {
-    color: #adadad;
-    border: 4px solid #adadad;
+    color: #c24700;
 }
 
 
@@ -805,7 +737,9 @@ h1 {
     #programminglogo-wrap>img {
         width: 200px;
     }
-
+    #graduated-section {
+        margin-top: 2100px;
+    }
     #grad-title {
         font-size: 40px;
     }
@@ -826,46 +760,6 @@ h1 {
 }
 
 @media screen and (min-width: 1024px) {
-    .lrg{
-        font-size: 50px;
-        
-    }
-    .edu-logo-wrap,.edu-logo-wrap-r {
-        display: none;
-    }
-    .django-color{
-        background-color: #092e20;
-    }
-    .py-color{
-        background-color: #4584b6;
-    }
-    .sql-color{
-        background-color: #F29111;
-    }
-    .drf-color{
-        background-color: #A30000;
-    }
-    .vue-color{
-        background-color: #42b883 ;
-    }
-    .js-color{
-        background-color: #F0DB4F;
-    }
-    .html-color{
-        background-color: #e34c26;
-    }
-    .css-color{
-        background-color: #2965f1;
-    }
-    .sqlit-color{
-        background-color: #F29111;
-    }
-    .git-color{
-        background-color: #6cc644;
-    }
-    .pip-color{
-        background-color: #4078c0;
-    }
     .work-logo {
         filter: drop-shadow(0px 35px 30px #bbbbbb);
     }
