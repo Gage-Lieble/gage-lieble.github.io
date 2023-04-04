@@ -866,6 +866,9 @@ h1 {
     .pip-color{
         background-color: #4078c0;
     }
+    .heroku-color{
+        background-color: #6762a6;
+    }
     .work-logo {
         filter: drop-shadow(0px 35px 30px #bbbbbb);
     }
