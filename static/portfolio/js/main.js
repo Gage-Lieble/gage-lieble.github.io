@@ -15,7 +15,7 @@ const nameType = () => {
         const myName = document.getElementById('myname')
         myName.innerHTML += halfOneNameFrames.charAt(i)
         i++;
-        scrambleWrap.innerHTML = ` ${scrambleTxt[Math.floor(Math.random()*scrambleTxt.length)]}`
+        scrambleWrap.innerHTML = ` ${scrambleTxt[Math.floor(Math.random()*scrambleTxt.length)]} ${scrambleTxt[Math.floor(Math.random()*scrambleTxt.length)]}`
         setTimeout(nameType, 100)
     }
     if(i === halfOneNameFrames.length && i <halfTwoNameFrames.length && i2 < halfTwoNameFrames.length){
@@ -23,7 +23,7 @@ const nameType = () => {
         scrambleWrap.style.color = '#90DD90'
         myName.innerHTML += `<span style='color:rgb(144, 221, 144)'>${halfTwoNameFrames.charAt(i2)}<span>`
         i2++;
-        scrambleWrap.innerHTML = ` ${scrambleTxt[Math.floor(Math.random()*scrambleTxt.length)]}`
+        scrambleWrap.innerHTML = ` ${scrambleTxt[Math.floor(Math.random()*scrambleTxt.length)]} ${scrambleTxt[Math.floor(Math.random()*scrambleTxt.length)]}`
         setTimeout(nameType, 100)
         if(i2 === halfTwoNameFrames.length){
             myName.innerHTML = `Hey, Im <span style='color:rgb(144, 221, 144)'>Gage Lieble!<span>`
