@@ -217,7 +217,15 @@ h1 {
 
 
 /* TOP INTRO */
-
+.pdx-link{
+    color:white;
+    text-decoration: underline; 
+    text-decoration-color: #f37024; 
+    -webkit-text-decoration-color: #f37024;
+}
+.pdx-link:hover{
+    color: #cfcfcf;
+}
 #intro-wrapper {
     display: flex;
     flex-direction: column;
@@ -538,16 +546,6 @@ h1 {
     width: 50px;
     border-radius: 50%;
 }
-/* #sec-hand{
-    background-color: rgb(144, 221, 144);
-    width: 225px;
-    height: 5px;
-    color: white;
-    margin-left: -110%;
-    position: absolute;
-    animation: clockRotate 8s linear infinite;
-}
- */
 
 #teaches-section {
     margin-top: 100px;
@@ -558,7 +556,6 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: pink; */
     margin-top: 75px;
 }
 
@@ -711,6 +708,13 @@ h1 {
 
 
 /* FOOTER */
+#email-link{
+    color:#72C162;
+}
+
+#email-link:hover{
+    color: #5c9b4f;
+}
 
 #footer-wrap {
     color: white;
