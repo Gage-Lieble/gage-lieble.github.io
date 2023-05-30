@@ -692,7 +692,6 @@ h1 {
 
 .reach-btns {
     border: 5px solid rgb(29, 29, 31);
-    /* background-color: #0f0f0f; */
     font-size: 20px;
     padding: 15px;
     color: black;
@@ -703,7 +702,8 @@ h1 {
 }
 
 .reach-btns:hover {
-    background-color: #282828;
+    border: 5px solid rgb(106, 106, 108);
+    color: rgb(106, 106, 108);
     cursor: pointer;
 }
 
