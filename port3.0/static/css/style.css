@@ -1,60 +1,134 @@
 body, html {
-    background-color: rgb(29, 29, 31);
+    background-color: #efefef;
     margin: 0px;
+    padding: 0px;
     overflow-x: hidden;
-    height: 100vh;
+    height: 300vh;
+    width: 100vw;
+    /* position: relative; */
 }
 
-
+/* * {
+  border: 1px solid blue;
+} */
 
 /* NAV */
 #nav-bar{
-    display: flex;
-    justify-content: space-between;
-    background-color: pink;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 15px 25px 15px 25px;
-    border-radius: 100px;
-    margin-top: 25px;
-    
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 38px;
+  max-width: 300px;
+  padding: 5px 5px 5px 5px;
+  margin-top: 25px;
+  z-index: 10;
+  border-radius: 100px;
+  background-color: rgb(255, 255, 255, .5);
+  border: 1px solid rgba(199, 199, 199, 0.5);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  -ms-backdrop-filter: blur(5px);
+  left: 50%;
+  transform: translate(-50%);
 }
 
-/* 
-  #scroll-text {
-    font-size: 75px;
-    display: inline-block;
-    width: auto;
-    background-color: pink;
-    overflow: visible;
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    
-    -moz-animation: my-animation 15s linear infinite;
-    -webkit-animation: my-animation 15s linear infinite;
-    animation: my-animation 15s linear infinite;
-  }
-  
-  @-moz-keyframes my-animation {
-    from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-100%); }
-  }
+.nav-item{
+  color: black;
+  text-decoration: none;
+  padding: 10px 0px 10px 0px;
+  border-radius: 100px;
+  width: 25%;
+  /* height: 5px; */
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  z-index: -1;
+  background-color: pink;
+}
 
-  @-webkit-keyframes my-animation {
-    from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-100%); }
+/* .nav-pill{
+  position: absolute;
+  color: rgb(255, 255, 255, 0);;
+  background-color: rgb(255, 255, 255, .5);
+  box-shadow:  0 0 0 1px rgba(201, 201, 201, 0.5);
+  z-index: 1;
+  width: 75px;
+  animation: MovePill 1s forwards;
+} */
+/* 
+@keyframes MovePill {
+  from{transform: translatex(0%);
   }
   
-  @keyframes my-animation {
-    from {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    to {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
-  }   */
+  to{transform: translatex(100%);}
+} */
+/* .nav-item:hover{
+  background-color: rgba(238, 238, 238, 0.5);
+  box-shadow:  0 0 0 1px rgb(255, 83, 61, 0.5);
+}  */
+
+
+
+.container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  margin: 0px 0px 100px 0px;
+  align-items: center;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.scroll {
+  white-space: nowrap;
+  margin: 0;
+
+}
+
+.scroll div {
+  display: flex;
+  gap: 2em;
+}
+
+.scroll h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  color: #ff533d;
+}
+
+.RightToLeft {
+  transition: all 3s ease;
+  animation: RightToLeft 10s infinite linear;
+}
+
+.LeftToRight {
+  transition: all 3s ease;
+  animation: LeftToRight 10s infinite linear;
+}
+
+
+@keyframes RightToLeft {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes LeftToRight {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
