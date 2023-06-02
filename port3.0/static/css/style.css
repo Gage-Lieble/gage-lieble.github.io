@@ -20,8 +20,8 @@ body, html {
   align-items: center;
   width: 100vw;
   height: 38px;
-  max-width: 300px;
-  padding: 5px 5px 5px 5px;
+  width: 300px;
+  padding: 5px 10px 5px 10px;
   margin-top: 25px;
   z-index: 10;
   border-radius: 100px;
@@ -39,41 +39,41 @@ body, html {
 .nav-item{
   color: black;
   text-decoration: none;
-  padding: 10px 0px 10px 0px;
   border-radius: 100px;
   width: 25%;
-  /* height: 5px; */
   margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: .5s;
-  z-index: -1;
-  background-color: pink;
+  z-index: 2;
+
 }
 
-/* .nav-pill{
+.nav-pill{
   position: absolute;
   color: rgb(255, 255, 255, 0);;
   background-color: rgb(255, 255, 255, .5);
   box-shadow:  0 0 0 1px rgba(201, 201, 201, 0.5);
   z-index: 1;
-  width: 75px;
-  animation: MovePill 1s forwards;
-} */
-/* 
-@keyframes MovePill {
-  from{transform: translatex(0%);
-  }
-  
-  to{transform: translatex(100%);}
-} */
-/* .nav-item:hover{
-  background-color: rgba(238, 238, 238, 0.5);
-  box-shadow:  0 0 0 1px rgb(255, 83, 61, 0.5);
-}  */
+  padding: 5px;
+  width: 65px;
+  height: 22px;
+  transition: 0.25s;
+}
 
-
+.nav-top{
+  margin-left: 0px;
+}
+.nav-projects{
+  margin-left: 73px;
+}
+.nav-contact{
+  margin-left: 150px;
+}
+.nav-about{
+  margin-left: 225px;
+}
 
 .container {
   display: flex;

@@ -31,3 +31,35 @@ const handleScroll = () => {
     }
 }   
 window.addEventListener('scroll', handleScroll)
+
+
+// Nav pill
+
+const pillMover = (location) => {
+    console.log(location)
+
+    const pill = document.getElementById('nav-pill')
+    const addClass = (loc) =>{ 
+        const classes = [' nav-item ', ' nav-pill ']
+        classes.forEach((cls) => {
+            
+            pill.classList += cls
+            
+        })
+        pill.classList.add(loc)
+        return pill
+    }
+    if (location === 'top'){
+        pill.className = ""
+        addClass('nav-top')
+    } else if (location === 'projects'){
+        pill.className = ""
+        addClass('nav-projects')
+    } else if (location === 'contact'){
+        pill.className = ""
+        addClass('nav-contact')
+    } else if (location === 'about'){
+        pill.className = ""
+        addClass('nav-about')
+    }
+}
