@@ -1,0 +1,27 @@
+/* minimum style requirements for marquees */
+.marqueeContainer {
+	height: 100px; 
+	overflow: hidden;
+	position: relative;
+	width: 110vw;
+	background-color: pink;
+	font-size: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 500px;
+}
+
+.marqueeContainer > * {
+	display: inline-block;
+	padding: 30px; 
+	position: absolute;
+	text-align: center;
+}
+
+
+
+.marqueeContainer.marqueeLeft,
+.marqueeContainer.marqueeRight {
+	white-space: nowrap;
+}

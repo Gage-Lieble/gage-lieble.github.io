@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gage Lieble</title>
+    <link rel="stylesheet" href="static/style/main.css">
+    <script src="static/scripts/main.js" defer></script>
+    <script src="static/scripts/buttonclicks.js" defer></script>
+</head>
+
+<body>
+    <section id="index-wrap" class="centerall">
+        <div id="video-wrap">
+            <div id="video-grad"></div>
+            <video id="vid-src" muted autoplay loop class="back-video">
+                <source src="media/vids/portland(sml).mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div id="slogan-wrap">
+            <img id="head-shot" src="media/imgs/head.webp">
+            <h1>Hand crafted websites for your <span style="font-family: script; font-size: 40px;">business </span>
+                needs!</h1>
+        </div>
+
+        <div id="cta-wrap">
+            <div class="cta-btn cta-loud" onclick="btnClickHandler('reach')">
+                <h3>Reach out</h3>
+                <h3>></h3>
+            </div>
+            <div class="cta-btn" onclick="btnClickHandler('about')">
+                <h3>About me</h3>
+            </div>
+            <div class="cta-btn" onclick="btnClickHandler('projects')">
+                <h3>Projects</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="projs-wrap">
+        <div class="website-wrap">
+            <img class="website-screen" style="border-bottom: 5px solid rgb(255, 52, 52);"
+                src="media/imgs/strxngersscreen.JPG">
+            <div class="web-bio">
+                <span>
+                    <h2 class="web-title">Strxngers</h2>
+                    <h3>Clothing Brand</h3>
+                </span>
+                <span class="webbtn-wrap">
+                    <div class="cta-btn cta-loud" style="background-color: rgb(255, 52, 52);"
+                        onclick="btnClickHandler('visit-strxngers')">
+                        <h3>Visit site</h3>
+                        <h3>></h3>
+                    </div>
+                    <div class="code-btn" onclick="btnClickHandler('code-strxngers')">
+                        <h3>Code ></h3>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <div class="website-wrap">
+            <img class="website-screen" style="border-bottom: 5px solid rgb(112, 190, 255);"
+                src="media/imgs/dreamstreamscreen.JPG">
+            <div class="web-bio">
+                <span>
+                    <h2 class="web-title">Dreamstream</h2>
+                    <h3>Personal project</h3>
+                </span>
+                <span class="webbtn-wrap">
+                    <div class="cta-btn cta-loud" onclick="btnClickHandler('visit-dreamstream')">
+                        <h3>Visit site</h3>
+                        <h3>></h3>
+                    </div>
+                    <div class="code-btn" onclick="btnClickHandler('code-dreamstream')">
+                        <h3>Code ></h3>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <!--  -->
+
+        <div class="website-wrap">
+            <img class="website-screen" style="border-bottom: 5px solid rgb(255, 52, 52);"
+                src="media/imgs/qrscreen.JPG">
+            <div class="web-bio">
+                <span>
+                    <h2 class="web-title">QRpixel</h2>
+                    <h3>Personal project</h3>
+                </span>
+                <span class="webbtn-wrap">
+                    <div class="cta-btn cta-loud" style="background-color: rgb(255, 52, 52);"
+                        onclick="btnClickHandler('visit-qrpixel')">
+                        <h3>Visit site</h3>
+                        <h3>></h3>
+                    </div>
+                    <div class="code-btn" onclick="btnClickHandler('code-qrpixel')">
+                        <h3>Code ></h3>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <!--  -->
+
+    </section>
+</body>
+
+</html>
