@@ -11,35 +11,37 @@
 </head>
 
 <body>
+    <div id="video-wrap">
+        <div id="video-grad"></div>
+        <video id="vid-src" muted autoplay loop class="back-video">
+            <source src="media/vids/pdxLRG.mp4" type="video/mp4">
+        </video>
+    </div>
     <section id="index-wrap" class="centerall">
-        <div id="video-wrap">
-            <div id="video-grad"></div>
-            <video id="vid-src" muted autoplay loop class="back-video">
-                <source src="media/vids/portland(sml).mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <div id="slogan-wrap">
-            <img id="head-shot" src="media/imgs/head.webp">
-            <h1>Hand crafted websites for your <span style="font-family: script; font-size: 40px;">business </span>
-                needs!</h1>
-        </div>
-
-        <div id="cta-wrap">
-            <div class="cta-btn cta-loud" onclick="btnClickHandler('reach')">
-                <h3>Reach out</h3>
-                <h3>></h3>
+      
+            <div id="slogan-wrap">
+                <img id="head-shot" class="blue-brdr" src="media/imgs/head.webp">
+                <h1>Hand crafted websites for your <span style="font-family: script; font-size: 40px;">business </span>
+                    needs!</h1>
             </div>
-            <div class="cta-btn" onclick="btnClickHandler('about')">
-                <h3>About me</h3>
+    
+            <div id="cta-wrap">
+                <div class="cta-btn cta-loud blue-brdr" onclick="btnClickHandler('reach')">
+                    <h3>Reach out</h3>
+                    <h3>></h3>
+                </div>
+                <div class="cta-btn" onclick="btnClickHandler('about')">
+                    <h3>About me ></h3>
+                </div>
+                <div class="cta-btn" onclick="btnClickHandler('projects')">
+                    <h3>Projects ></h3>
+                </div>
             </div>
-            <div class="cta-btn" onclick="btnClickHandler('projects')">
-                <h3>Projects</h3>
-            </div>
-        </div>
+       
 
     </section>
 
+    <div id="proj-backdrop"></div>
     <section id="projs-wrap">
         <div class="website-wrap">
             <img class="website-screen" style="border-bottom: 5px solid rgb(255, 52, 52);"
@@ -56,7 +58,7 @@
                         <h3>></h3>
                     </div>
                     <div class="code-btn" onclick="btnClickHandler('code-strxngers')">
-                        <h3>Code ></h3>
+                        <a class="link-destroy" href="https://github.com/Gage-Lieble/Strxngers"><h3>Details ></h3></a>
                     </div>
                 </span>
             </div>
@@ -71,12 +73,12 @@
                     <h3>Personal project</h3>
                 </span>
                 <span class="webbtn-wrap">
-                    <div class="cta-btn cta-loud" onclick="btnClickHandler('visit-dreamstream')">
+                    <div class="cta-btn cta-loud" style="background-color: rgb(112, 190, 255);" onclick="btnClickHandler('visit-dreamstream')">
                         <h3>Visit site</h3>
                         <h3>></h3>
                     </div>
                     <div class="code-btn" onclick="btnClickHandler('code-dreamstream')">
-                        <h3>Code ></h3>
+                        <a class="link-destroy" href="https://github.com/Gage-Lieble/DreamStream"><h3>Details ></h3></a>
                     </div>
                 </span>
             </div>
@@ -99,7 +101,7 @@
                         <h3>></h3>
                     </div>
                     <div class="code-btn" onclick="btnClickHandler('code-qrpixel')">
-                        <h3>Code ></h3>
+                        <a class="link-destroy" href="https://github.com/Gage-Lieble/QrPixel"><h3>Details ></h3></a>
                     </div>
                 </span>
             </div>
@@ -107,6 +109,10 @@
 
         <!--  -->
 
+    </section>
+
+    <section id="footer-wrap">
+        <h4>gagelieble - 2023</h4>
     </section>
 </body>
 
