@@ -6,7 +6,7 @@ html {
     padding: 0;
     overflow-x: hidden;
     font-family: nexa;
-    background-color: #f9f3f0;
+    background-color: #f3e9e5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,13 +81,13 @@ html {
     border-radius: 100%;
     padding: 5px;
     transform: scaleX(-1);
-    border: 3px solid #f9f3f0;
+    border: 3px solid #f3e9e5;
 }
 
 #slogan-wrap>h1 {
     font-size: 35px;
     margin: 15px 0px 0px 0px;
-    background-color: #f9f3f0;
+    background-color: #f3e9e5;
 }
 
 #slogan-wrap>p {
@@ -113,8 +113,8 @@ html {
     margin: 0px 0px 35px 0px;
 
     background-color: #43C59E;
-    color: #f9f3f0;
-    border: 3px solid #f9f3f0;
+    color: #f3e9e5;
+    border: 3px solid #f3e9e5;
     display: flex;
     text-decoration: none;
     justify-content: space-between;
@@ -218,7 +218,7 @@ html {
     /*     SAVE FOR DESKTOP ONLY
     #index-wrap{
         color: black;
-        background-color: #f9f3f0;
+        background-color: #f3e9e5;
     }
     #projs-wrap {
         border-radius:0px 30px 0px 0px;
