@@ -90,7 +90,7 @@ html {
 
 #slogan-wrap>p {
     color: black;
-    margin: 10px 0px 150px 5px;
+    margin: 10px 0px 75px 5px;
     font-size: 18px;
 }
 
@@ -103,6 +103,9 @@ html {
     flex-direction: column;
     justify-content: center;
     max-width: 500px;
+    position: absolute;
+    bottom: 0;
+    width: 85%;
 }
 .cta-btn {
     border-radius: 20px;
