@@ -111,7 +111,7 @@ html {
 .cta-btn {
     border-radius: 20px;
     padding: 10px 20px 10px 20px;
-    margin: 0px 0px 35px 0px;
+    margin: 0px 0px 0px 0px;
 
     background-color: #43C59E;
     color: #f3e9e5;
@@ -126,6 +126,23 @@ html {
     margin: 0;
 }
 
+#proj-cta{
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proj-text-cta{
+    margin: 20px 0px 0px 0px;
+}
+.proj-arrow{
+    width: 0px;
+    transform: rotate(90deg);
+    margin: 0px 0px 25px 0px;
+    
+}
 
 /*----------------------------------- PROJECTS SECTION -----------------------------------*/
 
