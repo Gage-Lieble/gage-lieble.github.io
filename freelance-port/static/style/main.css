@@ -96,11 +96,13 @@ html {
     border-radius: 100%;
     padding: 5px;
     transform: scaleX(-1);
+    border: 3px solid #f9f3f0;
 }
 
 #slogan-wrap>h1 {
     font-size: 40px;
     margin: 15px 0px 0px 0px;
+    background-color: #f9f3f0;
 }
 
 #slogan-wrap>p {
@@ -135,6 +137,7 @@ html {
 .cta-loud {
     background-color: #5dd39e;
     color: #f9f3f0;
+    border: 3px solid #f9f3f0;
     display: flex;
     text-decoration: none;
     justify-content: space-between;
@@ -215,7 +218,6 @@ html {
 #footer-wrap {
     display: flex;
     justify-content: center;
-    background-color: rgb(250, 250, 250);
 }
 
 #footer-wrap>h4 {
