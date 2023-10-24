@@ -69,21 +69,6 @@ html {
 
 }
 
-#proj-arrw {
-    width: 100vw;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #f9f3f0;
-}
-
-#proj-arrw>* {
-    margin-top: 0px;
-}
-
 .back-video {
     height: 100vh;
     opacity: 75%;
