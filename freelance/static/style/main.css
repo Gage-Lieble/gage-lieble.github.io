@@ -92,7 +92,8 @@ html {
 
 #slogan-wrap>p {
     color: black;
-    margin-bottom: 100px;
+    margin: 10px 0px 150px 5px;
+    font-size: 18px;
 }
 
 #slogan-wrap {
