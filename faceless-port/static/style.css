@@ -1,0 +1,103 @@
+body,html {
+    /* background-color: red; */
+    padding: 0;
+    margin: 0;
+    font-family: futura;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'aima';
+    src: url("/static/fonts/Aima.ttf");
+}
+@font-face {
+    font-family: 'futura';
+    src: url("/static/fonts/futura.otf");
+}
+
+h1 {
+    font-size: 30px;
+}
+#nav-wrap{
+    width: 100vw;
+    height: 75px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: rgb(60, 60, 60, .5);
+    backdrop-filter: blur(50px);
+    
+}
+
+#moji-wrap{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#moji-char{
+    width: 300px;
+    position: absolute;
+}
+
+#gage-script{
+    margin-top: 300px;
+    width: 190px;
+    z-index: 2;
+    filter: invert();
+}
+
+
+#g-script{
+    filter: invert();
+    height: 75%;
+
+}
+
+#HEADER{
+    /* position: absolute; */
+    height: 670px;
+    overflow: hidden;
+}
+#BIO{
+    /* background-color: red; */
+    padding-top: 25px;
+    background-color: rgb(60, 60, 60);
+    border-top: 2px solid white;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#lang-wrap{
+    width: 90vw;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+.lang-card{
+    width: 22vw;
+    height: 35px;
+}
+
+#bio-text{
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+}
