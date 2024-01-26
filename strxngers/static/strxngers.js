@@ -7,7 +7,7 @@
 setTimeout(() => {
     let logo = document.getElementById('strxngers-logo')
     logo.style.opacity = '100%'
-    logo.src=`/static/portfolio/imgs/strxngers/animate.gif`
+    logo.src=`/strxngers/static/imgs/animate.gif`
 }, 750)
 
 
@@ -119,7 +119,7 @@ detailsBtn.addEventListener('click', () =>{
     let prodTitle = document.getElementById('product-title')
     let splash = document.getElementById('img-splash')
     if (detailsBtn.innerHTML == 'Details'){
-        detailsBtn.innerHTML = '<img src="/static/portfolio/imgs/strxngers/favicon.svg" style="width:20px; position: absolute; filter: invert(100%); ">'
+        detailsBtn.innerHTML = '<img src="/strxngers/static/imgs/favicon.svg" style="width:20px; position: absolute; filter: invert(100%); ">'
     }else{
         detailsBtn.innerHTML = 'Details'
     }
