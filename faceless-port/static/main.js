@@ -2,40 +2,79 @@
 let parallaxCursor = false
 let parallaxScroll = true
 
+
+
+
+
+// const cursorBtn = document.getElementById("parralax-mouse")
+// const scrollBtn = document.getElementById("parralax-scroll")
+
+// cursorBtn.addEventListener('click', () => {
+//     if (parallaxCursor){
+//         console.log('fa')
+//         parallaxCursor = false
+//         document.getElementById("moji-char").style = ' '
+//         mojiParallaxCursor(parallaxCursor)
+            
+//     } else {
+//         console.log('tr')
+//         parallaxCursor = true
+//         mojiParallaxCursor(parallaxCursor)
+//     }
+// })
+
+// scrollBtn.addEventListener('click', () => {
+//     if (parallaxScroll){
+//         parallaxScroll = false
+//         mojiParallaxScroll(parallaxScroll)
+//     } else {
+//         parallaxScroll = true
+//         mojiParallaxScroll(parallaxScroll)
+//     }
+// })
+
+
 // MOJI PARALLAX CURSOR
-
-if (parallaxCursor){
-
-    let layers = document.querySelectorAll(".parallax")
-    document.addEventListener("mouseleave", () => {
-        console.log('nmindfg')
-        layers.forEach(layer => {
-            layer.style.transition  = `.1s ease`
-            
-            layer.style.transform  = ``
-        })
-    })
+const mojiParallaxCursor = (run) => {
     
-    document.addEventListener("mousemove", (e) => {
+    if(run) {
+        console.log('run')
+        let layers = document.querySelectorAll(".parallax")
+        document.addEventListener("mouseleave", () => {
     
-        layers.forEach(layer => {
-           
-            
-            let speed = layer.getAttribute('data-speed')
-    
-            const x = (window.innerWidth - e.pageX*speed)/75
-            const y = (window.innerHeight - e.pageY*speed)/75
-            
-            layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+            layers.forEach(layer => {
+                layer.style.transition  = `.1s ease`
+                
+                layer.style.transform  = ``
+            })
         })
         
-    })
+        document.addEventListener("mousemove", (e) => {
+        
+            layers.forEach(layer => {
+               
+                
+                let speed = layer.getAttribute('data-speed')
+        
+                const x = (window.innerWidth - e.pageX*speed)/75
+                const y = (window.innerHeight - e.pageY*speed)/75
+                
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+            })
+            
+        })
+
+    } else if (run == false) {
+        console.log('end')
+    
+    } 
+
     
 }
 
 // MOJI PARRALAX SCROLL
 
-if (parallaxScroll) {
+const mojiParallaxScroll = () => {
 
     setTimeout(() => {
         let prevPos = 0
