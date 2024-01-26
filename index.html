@@ -1,296 +1,94 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3G9YHKMP5Y"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-3G9YHKMP5Y');
-    </script>
-    <meta name="keywords" content="html, css, javascript, django, flask, gage lieble, pdxcodingguild, pdxcoding, portfolio, web design, web developement, full stack, front end, back end, coding, programming">
-    <meta name="oj:type" content="website">
-    <meta name="og:title" property="og:title" content="Gage Liebles Webdev Portfolio">
-    <meta name="description" content="Hi, my name is Gage Lieble! I am a software developer that has graduated from PDX code guild which is a 400+ hour bootcamp that teaches Javascript, Django, Python, Html, and Css. With these various lanuages, I am able to create the front and back-end sections of websites.">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gage Lieble</title>
-    <link rel="stylesheet" href="./static/portfolio/css/style.css">
-    <script defer src="./static/portfolio/js/main.js"></script>
-    <link rel="icon" href="./static/portfolio/imgs/glogodark.svg">
+    <title>Gage Code</title>
+    <script src="static/main.js" defer></script>
+    <link rel="stylesheet" href="static/style.css">
 </head>
-
-<!--
-
-                                                                            ///
-                                                                          //////
-                                                                         ///////
-                                                                       .//////. 
-                                                                      ///////   
-                                                                     ///////    
-                                                                    ///////     
-                                                                  .///////      
-                                             /////////           ////////       
-                                           ////////////         ////////        
-                                         */////////////        ////////         
-                                        //////////////        ////////          
-                                       ////// ///////       .////////           
-                                      ////// ///////.      /////////.           
-                                     ////// ///////,      /////////,            
-                                    *///// ///////       //////////        ..   
-                                    /////*///////      .//////////       /////  
-                                   *////////////      ///////////*      //////  
-                                  .////////////      ////////////      //////   
-                                  ////////////      ////////////      //////,   
-                                  //////////*     .////////////      *//////    
-                                 ///////////     ./////////////      //////     
-                                 /////////,     ////////*/////      */////      
-                                 ////////.    *///////*./////,      //////      
-                                ////////,    ////////  //////      */////.      
-                               *///////,   /////////  //////*     .//////       
-                              .////////  /////////.   //////      //////,       
-                             ,///////////////////    //////       //////        
-                            .//////////////////     *//////      */////*        
-                            /////////////////       //////       //////         
-        //,               //////// *//////,        ,//////       //////         
-       ////////          ////////                  ///////      //////          
-        ///////////,   .///////,                  *//////.      //////          
-          ////////////////////.                   ///////       //////          
-           ,//////////////////*,                 ,//////,      */////           
-             ,/////////////////////////          ///////       //////           
-  /*           *//////////   .,/////////////.    ///////       //////           
-/////         ////////////           ///////    ///////*      */////.           
-  //////..//////////////////.                   ///////       */////.           
-   /////////////////. /////////                *///////       //////            
-     /////////////      *////////.             *///////      ,//////            
-          //*              /////////           ////////      ,/////,            
-                             *////////.       .///////        /////             
-                                /////////.    *///////                          
-                                  ./////////. ,///////       ,////*             
-                                      ////////////////      .///////            
-                                        */////////////       //////             
-                                           //////////                           
-                                              *//////                           
-                                                                                
-                                                                            
-    -->
-
 <body>
-    <img id="topo-left" src="./static/portfolio/imgs/topoL.svg" alt="squiggle">
-    <img id="topo-right" src="./static/portfolio/imgs/topoR.svg" alt="squiggle">
-    <div id="nav-bar">
-        <div id="nav-toggle" class="toggle">
-            <div id="bar-one" class="togglebar"></div>
-            <div id="bar-two" class="togglebar"></div>
-        </div>
-        <img id="nav-logo" src="./static/portfolio/imgs/glogo.svg" alt="glogo">
-    </div>
+    <div id="global-wrap">
 
-
-    <div id="nav-option-wrap">
-        <div class="nav-option" id="nav-projects"><a href="javascript:void(0)">Projects</a></div>
-        <div class="nav-option" id="nav-education"><a href="javascript:void(0)">Education</a></div>
-        <div class="nav-option" id="nav-about"><a href="https://gagelieble.com/static/portfolio/imgs/GageLiebleSoftwareResume.pdf">Resume</a></div>
-        <div class="nav-option" id="nav-reachout"><a href="javascript:void(0)">Reach Out</a></div>
-        <div class="nav-option" id="nav-about"><a href="javascript:void(0)">Who am I?</a></div>
-    </div>
-
-
-    <div id="intro-wrapper">
-
-        <h1 id="main-word">SOFTWARE</h1>
-        <img id="headshot-img" src="./static/portfolio/imgs/gagehead.png" alt="headphoto">
-        <h1 id="developer">DEVELOPER</h1>
-        <div id="name-wrap">
-            <h4 id="myname"></span></h4><h4 id="name-end"><span id="scramble">Q</span>></h4>
+        <div id="nav-wrap">
+            <img id="g-script"src="static/img/g_script.svg" alt="G">
+            <img src="" alt="">
         </div>
         
-        <!-- Hey, Im <span style="color:rgb(144, 221, 144);">Gage Lieble -->
-        </div>
-        <!-- <span id="type-line">_</span> -->
-        <div id="about-wrapper">
-            <div id="loading-wrap" style="display: none;">
-                <img src="./static/portfolio/imgs/loader.gif" id="loader-icon">
-                <h3 id="loading-text">Loading project...</h3>
+        <section id="HEADER">
+            <div id="moji-wrap">
+                <img class="parallax" data-speed="5" data-pos="1" id="moji-char" src="static/img/moji.PNG" alt="3D Me" >
+                <img class="parallax" data-speed="3" data-pos="1" id="gage-script" src="static/img/gage_script.svg" alt="Gage">
+            </div>
+        </section>
+        <section id="BIO">
+            <h1 id="bio-text">Trained developer now in College</h1>
+            
+            <!-- knowledge -->
+            <div id="lang-wrap">
+                <img class="lang-card" src="static/img/lang_imgs/dj.svg" alt="django">
+                <img class="lang-card" src="static/img/lang_imgs/react.svg" alt="react">
+                <img class="lang-card" src="static/img/lang_imgs/vue.svg" alt="vue">
+                <img class="lang-card" src="static/img/lang_imgs/drf.svg" alt="djangorestframework">
+                <img class="lang-card" src="static/img/lang_imgs/py.svg" alt="py">
+                <img class="lang-card" src="static/img/lang_imgs/js.svg" alt="js">
+                <img class="lang-card" src="static/img/lang_imgs/cpp.svg" alt="cpp">
+                <img class="lang-card" src="static/img/lang_imgs/html.svg" alt="htmlcss">
+                <img class="lang-card" src="static/img/lang_imgs/git.svg" alt="git">
+                <img class="lang-card" src="static/img/lang_imgs/sql.svg" alt="sql">
+                <img class="lang-card" src="static/img/lang_imgs/heroku.svg" alt="heroku">
+                <img class="lang-card" src="static/img/lang_imgs/cpanel.svg" alt="cpanel">
+            </div>
+            <!-- Education -->
+            <h1>My Education</h1>
+            <span class='edu-card' id="pcc">
+                <img class="school-logo" src="/static/img/pcc.svg" alt="pcc">
+                <span class="edu-bio">
+                    <h4>PCC Comp Science</h4>
+                    <h5>university transfer</h5>
+                </span>
+            </span>
+            <span class='edu-card' id="pdx">
+                <img class="school-logo" src="/static/img/pdx.svg" alt="pdx">
+                <span class="edu-bio">
+                    <h4>PDX CODE GUILD</h4>
+                    <h5>software bootcamp</h5>
+                </span>
+            </span>
+            <!-- <button id="parralax-mouse" >parralax-mouse</button>
+                <button id="parralax-scroll">parralax-scroll</button> -->
+
+            <!-- Projects -->
+            <h1>Projects</h1>
+            <div id="project-wrap">
+                <span class="project-card" style="margin-left: 25px;" id="dreamstream">
+                    <span class="proj-head">
+                        <h3>Dreamstream</h3>
+                        <h5>Movie Search Engine</h5>
+                    </span>
+                    <img class="proj-img" src="/static/img/projects/dreamstreamscreen.JPG" alt="">
+                    <a class="code-link" style="background-color: #4ea8de;" href="https://github.com/Gage-Lieble/DreamStream">Code ></a>
+                </span>
+                <span class="project-card" id="strxngers">
+                    <span class="proj-head">
+                        <h3>Strxngers</h3>
+                        <h5>Clothing Shop</h5>
+                    </span>
+                    <img class="proj-img" src="/static/img/projects/strxngersscreen.JPG" alt="">
+                    <a class="code-link" style="background-color: #DC1E3D;" href="https://gagelieble.com/strxngers.html">Visit ></a>
+                </span>
+                <span class="project-card" style="margin-right: 25px;" id="qrpixel">
+                    <span class="proj-head">
+                        <h3>QRPixel</h3>
+                        <h5>QR Code Generator</h5>
+                    </span>
+                    <img class="proj-img" src="/static/img/projects/qrscreen.JPG" alt="">
+                    <a class="code-link" style="background-color: #ef3e23;" href="https://github.com/Gage-Lieble/QrPixel">Code ></a>
+                </span>
                 
             </div>
+            </section>
             
-            <h1 id="about-head">WHO AM I?</h1>
-            <a id="resume-link" href="./static/portfolio/imgs/GageLiebleSoftwareResume.pdf">My Resume ></a>
-        <div id="sentences">
-            <p>I am based in the City of Roses, Portland OR.</p>
-            <p>I have learned how to code through PDX code guild!</p>
-            <p><a href="https://www.pdxcodeguild.com/" class="pdx-link">PDX code guild</a> is a full stack, python-based bootcamp that teaches software development related topics such as programming languages, frameworks, creating APIS, and collaborating with a team.</p>
-            <p>My interest in software began in my early years of middle school.</p>
-            <p>In middle school I created my first website using HTML and CSS exclusively; which I taught myself by watching various Youtube tutorials and scrolling through tons of pages on StackOverflow.</p>
-            <p>My programming abilities have definitely improved since then and I am glad to further my knowlege in tech!</p>
-            <p style="text-align:center"><span style="color:rgb(144, 221, 144);">some</span> of my tech knowledge</p>
         </div>
-    </div>
-    <div id="languages">
-        <img src="./static/portfolio/imgs/django.svg" alt="django">
-        <img src="./static/portfolio/imgs/react.svg" alt="react">
-        <img src="./static/portfolio/imgs/python.svg" alt="python">
-        <img src="./static/portfolio/imgs/javascript.svg" alt="javascript">
-        <img src="./static/portfolio/imgs/git.svg" alt="github">
-    </div>
-
-    <h1 id="work-head">IVE BUILT</h1>
-    <div id="work-wrapper">
-<div>
-            <div class="site-wrap">
-                <img class="work-img" src="./static/portfolio/imgs/strxngersscreen.JPG" alt="qrscreen">
-                <img class="work-logo" id="strxnger-logo" src="./static/portfolio/imgs/strxngers.svg" alt="qrlogo">
-            </div>
-            <div class="work-links"><a style="background-color: #dc1e3d;" href="https://github.com/Gage-Lieble/Strxngers">Github ></a><a style="background-color: #dc1e3d;" href="/strxngers.html" onclick="displayLoader('Strxngers')">Mockup ></a></div>
-            <div id="work-languages">
-                <img src="./static/portfolio/imgs/javascript.svg" alt="javascript">
-                
-            </div>
-        </div>
-        <div>
-            <div class="site-wrap">
-                <img class="work-img" src="./static/portfolio/imgs/qrscreen.JPG" alt="qrscreen">
-                <img class="work-logo" src="./static/portfolio/imgs/qrlogo.svg" alt="qrlogo">
-            </div>
-            <div class="work-links"><a class="qr-links" href="https://github.com/Gage-Lieble/QrPixel">Github ></a><a class="qr-links" href="https://qrpixel-gage.herokuapp.com/" onclick="displayLoader('QrPixel')">QrPixel ></a></div>
-            <div id="work-languages">
-                <img src="./static/portfolio/imgs/javascript.svg" alt="javascript">
-                <img src="./static/portfolio/imgs/django.svg" alt="django">
-                <img src="./static/portfolio/imgs/python.svg" alt="python">
-            </div>
-        </div>
-        <div>
-            <div class="site-wrap">
-                <img class="work-img" src="./static/portfolio/imgs/dreamstreamscreen.JPG" alt="dreamscreen">
-                <img id="dream-logo" class="work-logo" src="./static/portfolio/imgs/dreamstreamlogo.svg" alt="dreamlogo">
-            </div>
-            <div class="work-links"><a class="dream-links" href="https://github.com/Gage-Lieble/DreamStream">Github ></a><a class="dream-links" href="https://dream-stream-gage.herokuapp.com/" onclick="displayLoader('Dreamstream')">DreamStream ></a></div>
-            <div id="work-languages">
-                <img src="./static/portfolio/imgs/javascript.svg" alt="javascript">
-                <img src="./static/portfolio/imgs/django.svg" alt="django">
-                <img src="./static/portfolio/imgs/python.svg" alt="python">
-            </div>
-        </div>
-
-        <div>
-            <div class="site-wrap">
-                <img class="work-img" src="./static/portfolio/imgs/weatherscreen.JPG" alt="weatherscreen">
-                <img id="weather-logo" class="work-logo" src="./static/portfolio/imgs/weatherlogo.svg" alt="weatherlogo">
-            </div>
-            <div class="work-links"><a class="weather-links" href="https://github.com/Gage-Lieble/APIweatherapp">Github ></a><a class="weather-links" href="https://simple-weather-gage.herokuapp.com/" onclick="displayLoader('Weather')">Weather ></a></div>
-            <div id="work-languages">
-                <img src="./static/portfolio/imgs/django.svg" alt="">
-                <img src="./static/portfolio/imgs/python.svg" alt="">
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <div id="education-wrapper">
-        <h1 id="edu-head">EDUCATION</h1>
-        <h2 id="pdxcode-title">PDX CODE GUILD <img id="guild-logo" src="./static/portfolio/imgs/guildlogo.svg" alt="pdxcodeguild"></h2>
-        <div id="clock-section">
-
-            <div id="clock-outline"><img src="./static/portfolio/imgs/clockdots.svg" alt="clock"><span id="mid-circle"></span><span id="hour-hand"></span><span id="min-hand"></span><span id="sec-hand"></span></div>
-            <div id="time-tags">
-                <h2 style='margin-left: -25px;' class="edu-taglines">Is a</h2>
-                <h2 class="edu-taglines">500+ hour</h2>
-                <h2 class="edu-taglines">16 week</h2>
-                <h2 style='margin-left: -25px;' class="edu-taglines">Course</h2>
-            </div>
-        </div>
-        <div id="teaches-section">
-            <h2 class="edu-taglines">That teaches . . .</h2>
-
-            <div class="teachsub-section">
-                <h2 class="edu-taglines lrg">BACK-END</h2>
-                <div class="tech-wrap">
-                    <h3 class="frameworks django-color">Django</h3>
-                    <h3 class="frameworks py-color">Python</h3>
-                    <h3 class="frameworks sql-color">SQL</h3>
-                    <h3 class="frameworks drf-color">Django Rest Framework</h3>
-                    <h3 class="frameworks">Flask</h3>
-                </div>
-                <span class="edu-logo-wrap outer-1">
-                    <img src="./static/portfolio/imgs/python.svg" alt="">
-                </span>
-                <span class="edu-logo-wrap mid django-logo">
-                    <img src="./static/portfolio/imgs/django.svg" alt="">
-                </span>
-                <span class="edu-logo-wrap outer-2">
-                    <img src="./static/portfolio/imgs/flask.svg " alt="" >
-                </span>
-            </div>
-            
-            <div class="teachsub-section">
-                <h2 class="edu-taglines lrg">FRONT-END</h2>
-                <div class="tech-wrap">
-                    <h3 class="frameworks vue-color">Vue.js</h3>
-                    <h3 class="frameworks js-color">Javascript</h3>
-                    <h3 class="frameworks html-color">Html</h3>
-                    <h3 class="frameworks css-color">CSS</h3>
-                </div>
-
-                <span class="edu-logo-wrap-r outer-1">
-                    <img src="./static/portfolio/imgs/javascript.svg" alt="">
-                </span>
-                <span class="edu-logo-wrap-r mid">
-                    <img src="./static/portfolio/imgs/vue.svg" alt="">
-                </span>
-                <span class="edu-logo-wrap-r outer-2">
-                    <img src="./static/portfolio/imgs/htmlcss.svg" alt="" >
-                </span>
-            </div>
-
-            <div class="teachsub-section" id="tech-tools">
-                <h2 class="edu-taglines lrg">MISC.</h2>
-                <div class="tech-wrap">
-                    <h3 class="frameworks sqlit-color">SQLite</h3>
-                    <h3 class="frameworks rest-color">REST API</h3>
-                    <h3 class="frameworks git-color" >Github</h3>
-                    <h3 class="frameworks heroku-color" >Heroku</h3>
-                    <h3 class="frameworks pip-color" >Pip Packages</h3>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <div id="graduated-section">
-        <h2 id="grad-title">I Graduated in 2022!</h2>
-        <img id="cert-img" src="./static/portfolio/imgs/cert.JPG" alt="cert">
-        <div id="cert-title">PDX Code Guild Certification</div>
-        
-        <a id="resume-link" href="./static/portfolio/imgs/GageLiebleSoftwareResume.pdf">My Resume ></a>
-    </div>
-
-    <div id="reachout-section">
-        <img id="topo-reach-left" src="./static/portfolio/imgs/topoL.svg" alt="squiggle">
-        <img id="topo-reach-right" src="./static/portfolio/imgs/topoR.svg" alt="squiggle">
-        <h1>REACH OUT!</h1>
-        <h2 style="font-size:30px"> <a href="mailto:gagelieble@gmail.com" id="email-link">gagelieble@gmail.com</a> </h2>
-        <div id="reach-links">
-
-            <a class='reach-btns' href="https://www.linkedin.com/in/gage-lieble-954076229">Linkedin ></a>
-
-            <a class='reach-btns' href="https://github.com/Gage-Lieble">Github ></a>
-        </div>
-    </div>
-
-    <div id="footer-wrap">
-        &copy; 2023 Gage Lieble
-    </div>
-</body>
-
-</html>
+        </body>
+        </html>
