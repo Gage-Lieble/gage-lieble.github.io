@@ -399,7 +399,7 @@ button {
 
 @font-face {
     font-family: 'larken';
-    src: local('rounded'), url('/static/css/fonts/larken.ttf') format("truetype");
+    src: local('rounded'), url('/strxngers/static/css/larken.ttf') format("truetype");
 }
 
 /* ANIMATIONS */
